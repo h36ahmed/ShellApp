@@ -12,7 +12,35 @@
 		E47984A11FECB118002A4DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E479849F1FECB118002A4DF2 /* Main.storyboard */; };
 		E47984A31FECB118002A4DF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E47984A21FECB118002A4DF2 /* Assets.xcassets */; };
 		E47984A61FECB118002A4DF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47984A41FECB118002A4DF2 /* LaunchScreen.storyboard */; };
+		E47984B41FECB19A002A4DF2 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47984B31FECB19A002A4DF2 /* ActionViewController.swift */; };
+		E47984B71FECB19A002A4DF2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47984B51FECB19A002A4DF2 /* MainInterface.storyboard */; };
+		E47984BB1FECB19A002A4DF2 /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E47984B11FECB19A002A4DF2 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E47984C11FECB3DB002A4DF2 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = E47984C01FECB3DB002A4DF2 /* Action.js */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E47984B91FECB19A002A4DF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E47984901FECB118002A4DF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E47984B01FECB19A002A4DF2;
+			remoteInfo = Extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E47984BF1FECB19A002A4DF2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E47984BB1FECB19A002A4DF2 /* Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E47984981FECB118002A4DF2 /* ShellApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShellApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +50,22 @@
 		E47984A21FECB118002A4DF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E47984A51FECB118002A4DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E47984A71FECB118002A4DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E47984B11FECB19A002A4DF2 /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47984B31FECB19A002A4DF2 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		E47984B61FECB19A002A4DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		E47984B81FECB19A002A4DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E47984C01FECB3DB002A4DF2 /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E47984951FECB118002A4DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E47984AE1FECB19A002A4DF2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				E479849A1FECB118002A4DF2 /* ShellApp */,
+				E47984B21FECB19A002A4DF2 /* Extension */,
 				E47984991FECB118002A4DF2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				E47984981FECB118002A4DF2 /* ShellApp.app */,
+				E47984B11FECB19A002A4DF2 /* Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +106,17 @@
 			path = ShellApp;
 			sourceTree = "<group>";
 		};
+		E47984B21FECB19A002A4DF2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E47984B31FECB19A002A4DF2 /* ActionViewController.swift */,
+				E47984B51FECB19A002A4DF2 /* MainInterface.storyboard */,
+				E47984B81FECB19A002A4DF2 /* Info.plist */,
+				E47984C01FECB3DB002A4DF2 /* Action.js */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +127,34 @@
 				E47984941FECB118002A4DF2 /* Sources */,
 				E47984951FECB118002A4DF2 /* Frameworks */,
 				E47984961FECB118002A4DF2 /* Resources */,
+				E47984BF1FECB19A002A4DF2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E47984BA1FECB19A002A4DF2 /* PBXTargetDependency */,
 			);
 			name = ShellApp;
 			productName = ShellApp;
 			productReference = E47984981FECB118002A4DF2 /* ShellApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E47984B01FECB19A002A4DF2 /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E47984BC1FECB19A002A4DF2 /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				E47984AD1FECB19A002A4DF2 /* Sources */,
+				E47984AE1FECB19A002A4DF2 /* Frameworks */,
+				E47984AF1FECB19A002A4DF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Extension;
+			productName = Extension;
+			productReference = E47984B11FECB19A002A4DF2 /* Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +167,10 @@
 				ORGANIZATIONNAME = luminix;
 				TargetAttributes = {
 					E47984971FECB118002A4DF2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E47984B01FECB19A002A4DF2 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +190,7 @@
 			projectRoot = "";
 			targets = (
 				E47984971FECB118002A4DF2 /* ShellApp */,
+				E47984B01FECB19A002A4DF2 /* Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +206,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E47984AF1FECB19A002A4DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47984C11FECB3DB002A4DF2 /* Action.js in Resources */,
+				E47984B71FECB19A002A4DF2 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +227,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E47984AD1FECB19A002A4DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47984B41FECB19A002A4DF2 /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E47984BA1FECB19A002A4DF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E47984B01FECB19A002A4DF2 /* Extension */;
+			targetProxy = E47984B91FECB19A002A4DF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E479849F1FECB118002A4DF2 /* Main.storyboard */ = {
@@ -158,6 +260,14 @@
 				E47984A51FECB118002A4DF2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E47984B51FECB19A002A4DF2 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E47984B61FECB19A002A4DF2 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -273,6 +383,7 @@
 		E47984AB1FECB118002A4DF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7SAXJRP4RJ;
@@ -288,6 +399,7 @@
 		E47984AC1FECB118002A4DF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7SAXJRP4RJ;
@@ -295,6 +407,36 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.luminix.ShellApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E47984BD1FECB19A002A4DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SAXJRP4RJ;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luminix.ShellApp.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E47984BE1FECB19A002A4DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SAXJRP4RJ;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luminix.ShellApp.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,6 +459,15 @@
 			buildConfigurations = (
 				E47984AB1FECB118002A4DF2 /* Debug */,
 				E47984AC1FECB118002A4DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E47984BC1FECB19A002A4DF2 /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47984BD1FECB19A002A4DF2 /* Debug */,
+				E47984BE1FECB19A002A4DF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
